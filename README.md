@@ -78,24 +78,24 @@ Add 1 tab or 4 spaces at the beginning of several lines of text.
     of Rohan,
     my brothers!
 
-#### 语法2
-使用一对各三个的反引号：
+#### Syntax 1
+Use three backticks:
 ```
-欢迎到访
-我是C++码农
-你可以在知乎、CSDN、简书搜索【果冻虾仁】找到我
+Sons of Gondor,
+of Rohan,
+my brothers!
 ```
-该语法也可以实现代码高亮，见[代码高亮](#代码高亮)
-### 文字高亮
-文字高亮功能能使行内部分文字高亮，使用一对反引号。
-语法：
+This syntax can also be used for code highlighting，See [Code-highlighting](#Code-highlighting)
+### Text highlighting
+Using a pair of backquotes.
+Syntax：
 ```
-`linux` `网络编程` `socket` `epoll` 
+`linux` `ubuntu` `socket` `epoll` 
 ```
-效果：`linux` `网络编程` `socket` `epoll`
+Look like: `linux` `ubuntu` `socket` `epoll`
 
-也适合做一篇文章的tag
-#### 换行
+Also suitable for making tags for articles.
+#### Wrap
 直接回车不能换行，  
 可以在上一行文本后面补两个空格，  
 这样下一行的文本就换行了。
