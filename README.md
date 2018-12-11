@@ -63,16 +63,16 @@ Headers
 ###### This is an h6 tag
 
 
-Textual content
+Texts
 ------
-### 普通文本
-这是一段普通的文本
-### 单行文本
-    Hello,大家好，我是果冻虾仁。
-在一行开头加入1个Tab或者4个空格。
-### 文本块
-#### 语法1
-在连续几行的文本开头加入1个Tab或者4个空格。
+### Normal text
+This is a example of normal text.
+### Single-line text
+    Hello, world!
+Add 1 tab or 4 spaces at the beginning of the line.
+### Multi-line text
+#### Syntax 1
+Add 1 tab or 4 spaces at the beginning of several lines of text.
 
     欢迎到访
     很高兴见到您
