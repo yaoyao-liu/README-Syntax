@@ -7,7 +7,11 @@ This file is used to demonstrate the markdown syntax for writing README files. T
 	
 |Translator|Yaoyao Liu|
 |---|---
-|E-mail|yliu@yliu.tech
+|E-mail|yliu@yliu.tech|
+
+|Original Author|果冻虾仁|
+|---|---
+|E-mail|Jelly.K.Wang@qq.com|
 
 
 ****
