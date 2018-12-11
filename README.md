@@ -63,7 +63,7 @@ Headers
 ###### This is an h6 tag
 
 
-文本
+Textual content
 ------
 ### 普通文本
 这是一段普通的文本
