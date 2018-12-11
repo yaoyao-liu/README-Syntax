@@ -13,7 +13,7 @@ This file is used to demonstrate the markdown syntax for writing README files. T
 ****
 ## Index
 * [Lines](#Lines)
-* [Titles](#Titles)
+* [Headers](#Headers)
 * [Textual content](#Textual content)
     * Normal text
     * Single-line text
@@ -32,19 +32,19 @@ This file is used to demonstrate the markdown syntax for writing README files. T
         *  Links the URL in this repository
     * Anchor
     * [Image Links](#Image Links)
-* [列表](#列表)
-    * 无序列表
-    * 有序列表
-    * 复选框列表
-* [块引用](#块引用)
-* [代码高亮](#代码高亮)
-* [表格](#表格) 
-* [表情](#表情)
-* [diff语法](#diff语法)
+* [Lists](#Lists)
+    * Unordered lists
+    * Ordered lists
+    * Check box lists
+* [Block reference](#Block reference)
+* [Code highlighting](#Code highlighting)
+* [Tables](#Tables) 
+* [Emoji](#Emoji)
+* [diff syntax](#diff syntax)
 
-### 横线
+### Lines
 -----------
-***、---、___可以显示横线效果
+***、---、___can display the line effect
 
 ***
 ---
@@ -52,15 +52,15 @@ ___
 
 
 
-标题
+Headers
 ------
 
-# 一级标题  
-## 二级标题  
-### 三级标题  
-#### 四级标题  
-##### 五级标题  
-###### 六级标题  
+# This is an <h1> tag
+## This is an <h2> tag  
+### This is an <h3> tag 
+#### This is an <h4> tag 
+##### This is an <h5> tag
+###### This is an <h6> tag
 
 
 文本
