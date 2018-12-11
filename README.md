@@ -12,30 +12,28 @@ This file is used to demonstrate the markdown syntax for writing README files. T
 
 ****
 ## Index
-* [Lines](#Lines)
-* [Headers](#Headers)
-* [Texts](#Texts)
+* [Lines](#lines)
+* [Headers](#headers)
+* [Texts](#texts)
     * [Normal text](#normal-text)
-    * Single-line text
-    * Multi-line text
-    * Text highlighting
-    * Wrap
-    * Italic
-    * Bold
-    * Strikethrough
+    * [Single-line text](#single-line-text)
+    * [Multi-line text](#multi-line-text)
+    * [Text highlighting](#text-highlighting)
+    * [Wrap](#wrap)
+    * [Italic, bold, and strikethrough](#italic,-bold,-and-strikethrough)
 * [Images](#Images)
-    * Images from the Internet
-    * Images from the GitHub repository
+    * [Images from the Internet](#images-from-the-internet)
+    * [Images from the GitHub repository](#images-from-the-github-repository)
 * [Links](#Links) 
-    * Text hyperlink
-        *  Links to  external URL
-        *  Links the URL in this repository
-    * Anchor
-    * [Image links](#Image-links)
-* [Lists](#Lists)
-    * Unordered lists
-    * Ordered lists
-    * Check box lists
+    * [Text hyperlink](#text-hyperlink)
+        *  [Links to external URLs](#links-to-external-urls)
+        *  [Links to the URLs in this repository](#links-to-the-urls-in-this-repository)
+    * [Anchor](#anchor)
+    * [Image links](#image-links)
+* [Lists](#lists)
+    * [Unordered](#unordered)
+    * [Ordered](#ordered)
+    * [Task Lists](#task-lists)
 * [Block reference](#Block-reference)
 * [Code highlighting](#Code-highlighting)
 * [Tables](#Tables) 
@@ -96,14 +94,14 @@ Look like: `linux` `ubuntu` `socket` `epoll`
 
 Also suitable for making tags for articles.
 #### Wrap
-直接回车不能换行，  
-可以在上一行文本后面补两个空格，  
-这样下一行的文本就换行了。
+Directly inputing return cannot wrap.  
+You may add two spaces after the previous line of text.
+Then the text of the next line is wrapped.
 
-或者就是在两行文本直接加一个空行。
+You may also add a blank line directly to the two lines of text.
 
-也能实现换行效果，不过这个行间距有点大。
-#### 斜体、粗体、删除线
+This operation can also be used to wrap, except the line spacing is a bit large.
+#### Italic, bold, and strikethrough
 
 |语法|效果|
 |----|-----|
