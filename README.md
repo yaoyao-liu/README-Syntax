@@ -364,8 +364,6 @@ But this page is loaded **very slowly** every time. So I sorted it into this rep
 
 diff syntax
 ---------
-版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。
-GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。
 In the version control system, the function of diff is indispensable, i.e., the addition and deletion of a file content is displayed.
 The diff effect that can be displayed in GFM. Green is for new, while red is for deleted.
 #### Syntax
