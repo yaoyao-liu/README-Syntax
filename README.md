@@ -20,11 +20,11 @@ This file is used to demonstrate the markdown syntax for writing README files. T
     * [Multi-line text](#multi-line-text)
     * [Text highlighting](#text-highlighting)
     * [Wrap](#wrap)
-    * [Italic, bold, and strikethrough](#italic,-bold,-and-strikethrough)
-* [Images](#Images)
+    * [Emphasis and strikethrough](#emphasis-and-strikethrough)
+* [Images](#images)
     * [Images from the Internet](#images-from-the-internet)
     * [Images from the GitHub repository](#images-from-the-github-repository)
-* [Links](#Links) 
+* [Links](#links) 
     * [Text hyperlink](#text-hyperlink)
         *  [Links to external URLs](#links-to-external-urls)
         *  [Links to the URLs in this repository](#links-to-the-urls-in-this-repository)
@@ -34,11 +34,11 @@ This file is used to demonstrate the markdown syntax for writing README files. T
     * [Unordered](#unordered)
     * [Ordered](#ordered)
     * [Task Lists](#task-lists)
-* [Block reference](#Block-reference)
-* [Code highlighting](#Code-highlighting)
-* [Tables](#Tables) 
-* [Emoji](#Emoji)
-* [diff-syntax](#diff-syntax)
+* [Blockquotes](#blockquotes)
+* [Fenced code blocks](#fenced-code-blocks)
+* [Tables](#tables) 
+* [Emoji](#emoji)
+* [diff syntax](#diff-syntax)
 
 ### Lines
 -----------
@@ -101,210 +101,210 @@ Then the text of the next line is wrapped.
 You may also add a blank line directly to the two lines of text.
 
 This operation can also be used to wrap, except the line spacing is a bit large.
-#### Italic, bold, and strikethrough
+#### Emphasis and strikethrough
 
-|语法|效果|
+|Syntax|Look like|
 |----|-----|
-|`*斜体1*`|*斜体1*|
-|`_斜体2_`| _斜体2_|
-|`**粗体1**`|**粗体1**|
-|`__粗体2__`|__粗体2__|
-|`这是一个 ~~删除线~~`|这是一个 ~~删除线~~|
-|`***斜粗体1***`|***斜粗体1***|
-|`___斜粗体2___`|___斜粗体2___|
-|`***~~斜粗体删除线1~~***`|***~~斜粗体删除线1~~***|
-|`~~***斜粗体删除线2***~~`|~~***斜粗体删除线2***~~|
+|`*Italic1*`|*Italic1*|
+|`_Italic2_`| _Italic2_|
+|`**Bold1**`|**Bold1**|
+|`__Bold2__`|__Bold2__|
+|`This is a ~~strikethrough~~`|This is a ~~strikethrough~~|
+|`***Italic plus bold1***`|***Italic plus bold1***|
+|`___Italic plus bold2___`|___Italic plus bold2___|
+|`***~~Italic, bold, and strikethrough1~~***`|***~~Italic, bold, and strikethrough1~~***|
+|`~~***Italic, bold, and strikethrough2***~~`|~~***Italic, bold, and strikethrough2***~~|
 
-    斜体、粗体、删除线可混合使用
+    Italic, bold, strikethrough is able to be used together.
 
-图片
+Images
 ------
-基本格式：
+Basic syntax：
 ```
 ![alt](URL title)
 ```
-alt和title即对应HTML中的alt和title属性（都可省略）：
-- alt表示图片显示失败时的替换文本
-- title表示鼠标悬停在图片时的显示文本（注意这里要加引号）
+alt and title are corresponding to the alt and title attributes in the HTML (all can be omitted)：
+- alt indicates the replacement text when the image fails to display
+- title indicates the text to display when the mouse hovers over the image (note that it should be quoted here)
 
-URL即图片的url地址，如果引用本仓库中的图片，直接使用**相对路径**就可了，如果引用其他github仓库中的图片要注意格式，即：`仓库地址/raw/分支名/图片路径`，如：
+The URL is the url address of the image. If you refer to the image in this repository, you can use the **relative path** directly. If you refer to the images in other github repositories, you should pay attention to the format, ie: `repository address/raw/branch_name/image_path `, e.g.
 ```
-https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
+https://github.com/username/reponame/raw/master/folder/imagename.gif
 ```
 
-|#|语法|效果|
+|#|Syntax|Look like|
 |---|---|----
-|1|`![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")`|![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")
+|1|`![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google logo")`|![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google logo")
 |2|`![][foryou]`|![][foryou]
 
-注意例2的写法使用了**URL标识符**的形式，在[链接](#链接)一节有介绍。
->在文末有foryou的定义：
+Note that the syntax of Example 2 uses the form of the **URL identifier**, which has been described in the [Link](#link) section.
+>foryou is defined at the end of the page like this:
 ```
 [foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 ```
 
-链接
+Link
 ------
-### 链接外部URL
+### Links to external URLs
 
-|#|语法|效果|
+|#|Syntax|Look like|
 |---|----|-----|
-|1|`[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")`|[我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")|
-|2|`[我的知乎][zhihu] `|[我的知乎][zhihu] |
+|1|`[My blog](http://www.cnblogs.com/yaoyaoliu "Hover display")`|My blog](http://www.cnblogs.com/yaoyaoliu "Hover display")|
+|2|`[My GitHub][GitHubLink] `|[My GitHub][GitHubLink]|
 
-语法2由两部分组成：
-- 第一部分使用两个中括号，[ ]里的标识符（本例中zhihu），可以是数字，字母等的组合，标识符上下对应就行了（**姑且称之为URL标识符**）
-- 第二部分标记实际URL。
+This syntax consists of two parts:：
+- The label in [ ] (in this case is GitHubLink). It can be a combination of numbers, letters, etc.
+- The actual URL.
 
->使用URL标识符能达到复用的目的，一般把全文所有的URL标识符统一放在文章末尾，这样看起来比较干净。
->>URL标识符是我起的名字，不知道是否准确。囧。。
+>You may define your link label anywhere in the document.
 
-### 链接本仓库里的URL
+### Links to the URLs in this repository
 
-|语法|效果|
+|Syntax|Look like|
 |----|-----|
-|`[我的简介](/example/profile.md)`|[我的简介](/example/profile.md)|
+|`[Example document](/example/example.md)`|[Example document](/example/example.md)|
 |`[example](./example)`|[example](./example)|
 
-### 图片链接
-给图片加链接的本质是混合图片显示语法和普通的链接语法。普通的链接中[ ]内部是链接要显示的文本，而图片链接[ ]里面则是要显示的图片。  
-直接混合两种语法当然可以，但是十分啰嗦，为此我们可以使用URL标识符的形式。
+### Image links
+The essence of adding links to images is mixing image display syntax with the normal link syntax. In the normal link, [ ] is the text to be displayed inside the link, and the image link [ ] is the image to be displayed.
+It's ok to mix the two syntaxes directly, but it's awkward, so we can use the form of the link label.
 
-|#|语法|效果|
+|#|Syntax|Look like|
 |---|----|:---:|
 |1|`[![weibo-logo]](http://weibo.com/linpiaochen)`|[![weibo-logo]](http://weibo.com/linpiaochen)|
-|2|`[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]`|[![](/img/zhihu.png "我的知乎，欢迎关注")][zhihu]|
+|2|`[![](/img/zhihu.png "This is the Zhihu link")][zhihu]`|[![](/img/zhihu.png "This is the Zhihu link")][zhihu]|
 |3|`[![csdn-logo]][csdn]`|[![csdn-logo]][csdn]|
 
-因为图片本身和链接本身都支持URL标识符的形式，所以图片链接也可以很简洁（见例3）。  
-注意，此时鼠标悬停时显示的文字是图片的title，而非链接本身的title了。
-> 本文URL标识符都放置于文末
+As the image and the link both support link label, the image link can be very simple (see Example 3).
+Note that the text displayed when the mouse hovers there is the title of the image, not the title of the link.
+> All the link labels in the documents is placed at the end of the document.
 
-### 锚点
-其实呢，每一个标题都是一个锚点，和HTML的锚点（`#`）类似，比如我们 
+### Anchor
+In fact, each title is an anchor, similar to the HTML anchor (`#`), e.g.
 
-|语法|效果|
+|Syntax|Look like|
 |---|---|
-|`[回到顶部](#readme)`|[回到顶部](#readme)|
+|`[Back to top](#readme)`|[Back to top](#readme)|
 
-不过要注意，标题中的英文字母都被转化为**小写字母**了。
-> 以前GitHub对中文支持的不好，所以中文标题不能正确识别为锚点，但是现在已经没问题啦！
+Note that all the letters in the title are converted to **lowercase letters**.
 
-## 列表
-### 无序列表
-#### 语法
+## Lists
+### Unordered
+#### Syntax
 ```
-* 昵称：果冻虾仁
-- 别名：隔壁老王
-* 英文名：Jelly
+* First name: Yaoyao
+- Last name: Liu
+* Title: Mr.
 ```
-#### 效果
-* 昵称：果冻虾仁
-- 别名：隔壁老王
-* 英文名：Jelly
+#### Look like
+* First name: Yaoyao
+- Last name: Liu
+* Title: Mr.
 
-### 多级无序列表
-#### 语法
+### Multi-level unordered
+#### Syntax
 ```
-* 编程语言
-    * 脚本语言
-        * Python
+* Python
+    * Tensorflow
+        * slim
 ```
-#### 效果
-* 编程语言
-    * 脚本语言
-        * Python
+#### Look like
+* Python
+    * Tensorflow
+        * slim
 
-### 一级有序列表
-#### 语法
-就是在数字后面加一个点，再加一个空格。不过看起来起来可能不够明显。 
+### Ordered
+#### Syntax
+Just add a dot and a space after the number. However it may not seem obvious enough. 
 ```
-面向对象的三个基本特征：
+Famous social media:
 
-1. 封装
-2. 继承
-3. 多态
-```
-
-#### 效果
-面向对象的三个基本特征：
-
-1. 封装
-2. 继承
-3. 多态
-
-
-### 多级有序列表
-和无序列表一样，有序列表也有多级结构。
-#### 语法
-```
-1. 这是一级的有序列表，数字1还是1
-   1. 这是二级的有序列表，阿拉伯数字在显示的时候变成了罗马数字
-      1. 这是三级的有序列表，数字在显示的时候变成了英文字母
+1. FB
+2. IG
+3. WeChat
 ```
 
-#### 效果
+#### Look like
+Famous social media:
 
-1. 这是一级的有序列表，数字1还是1
-   1. 这是二级的有序列表，阿拉伯数字在显示的时候变成了罗马数字
-      1. 这是三级的有序列表，数字在显示的时候变成了英文字母
+1. FB
+2. IG
+3. WeChat
+
+
+### Multi-level ordered
+Like unordered lists, ordered lists also have a multi-level structure.
+#### Syntax
+```
+1. First
+   1. Second
+      1. Third
+```
+
+#### Look like
+
+1. First
+   1. Second
+      1. Third
 	 
 
-### 复选框列表
-#### 语法
+### Task Lists
+#### Syntax
 ```
-- [x] 需求分析
-- [x] 系统设计
-- [x] 详细设计
-- [ ] 编码
-- [ ] 测试
-- [ ] 交付
+- [x] item 1
+- [x] item 2
+- [x] item 3
+- [ ] itme 4
+- [ ] item 5
+- [ ] item 6
 ```
-#### 效果
+#### Look like
 
-- [x] 需求分析
-- [x] 系统设计
-- [x] 详细设计
-- [ ] 编码
-- [ ] 测试
-- [ ] 交付
+- [x] item 1
+- [x] item 2
+- [x] item 3
+- [ ] itme 4
+- [ ] item 5
+- [ ] item 6
 
-您可以使用这个功能来标注某个项目各项任务的完成情况。
 > Tip:
->> 在GitHub的**issue**中使用该语法是可以实时点击复选框来勾选或解除勾选的，而无需修改issue原文。
+>> You may use this syntax in GitHub's **issue** to check or uncheck the checkbox in real time without having to modify the original version of the issue.
 
-## 块引用
-
-### 常用于引用文本
-#### 文本摘自《深入理解计算机系统》P27
-　令人吃惊的是，在哪种字节顺序是合适的这个问题上，人们表现得非常情绪化。实际上术语“little endian”（小端）和“big endian”（大端）出自Jonathan Swift的《格利佛游记》一书，其中交战的两个派别无法就应该从哪一端打开一个半熟的鸡蛋达成一致。因此，争论沦为关于社会政治的争论。只要选择了一种规则并且始终如一的坚持，其实对于哪种字节排序的选择都是任意的。
-> **“端”（endian）的起源**  
-以下是Jonathan Swift在1726年关于大小端之争历史的描述：  
-“……下面我要告诉你的是，Lilliput和Blefuscu这两大强国在过去36个月里一直在苦战。战争开始是由于以下的原因：我们大家都认为，吃鸡蛋前，原始的方法是打破鸡蛋较大的一端，可是当今的皇帝的祖父小时候吃鸡蛋，一次按古法打鸡蛋时碰巧将一个手指弄破了，因此他的父亲，当时的皇帝，就下了一道敕令，命令全体臣民吃鸡蛋时打破较小的一端，违令者重罚。”
-
-### 块引用有多级结构
-#### 语法
+## Blockquotes
+#### Syntax
 ```
-> 数据结构
->> 树
->>> 二叉树
->>>> 平衡二叉树
->>>>> 满二叉树
+As Grace Hopper said:
+> I’ve always been more interested
+> in the future than in the past.
 ```
-#### 效果
-> 数据结构
->> 树
->>> 二叉树
->>>> 平衡二叉树
->>>>> 满二叉树
+#### Look like
+As Grace Hopper said:
+> I’ve always been more interested
+> in the future than in the past.
 
-代码高亮
+### Multi-level blockquotes
+#### Syntax
+```
+> Asia
+>> China
+>>> Beijing
+>>>> Haidian
+>>>>> Tsinghua
+```
+#### Look like
+> Asia
+>> China
+>>> Beijing
+>>>> Haidian
+>>>>> Tsinghua
+
+Fenced code blocks
 ----------
 
-### 语法
-在三个反引号后面加上编程语言的名字，另起一行开始写代码，最后一行再加上三个反引号。
+### Syntax
+With GFM you can wrap your code with three back quotes to create a code block without the leading spaces. Add annoptional language identifier and your code will get syntax highlighting.
 
-### 效果
+### Look like
 ```Java
 public static void main(String[]args){} //Java
 ```
@@ -320,76 +320,73 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 ```cpp
 string &operator+(const string& A,const string& B) //cpp
 ```
-表格
+Tables
 --------
 
-表头1  | 表头2|
---------- | --------|
-表格单元  | 表格单元 |
-表格单元  | 表格单元 |
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
 
-| 表头1  | 表头2|
-| ---------- | -----------|
-| 表格单元   | 表格单元   |
-| 表格单元   | 表格单元   |
+### Align
+You may specify alignment like this:
 
-### 对齐
-表格可以指定对齐方式
-
-| 左对齐 | 居中  | 右对齐 |
+| Align left | Centered  | Align right |
 | :------------ |:---------------:| -----:|
 | col 3 is      | some wordy text | $1600 |
 | col 2 is      | centered        |   $12 |
 | zebra stripes | are neat        |    $1 |
 
-### 混合其他语法
-表格单元中的内容可以和其他大多数GFM语法配合使用，如：  
-#### 使用普通文本的删除线，斜体等效果
+### Mix with other syntax
+Most GFM syntax can be applied in the contents of the table cell, e.g.  
+#### Use strikethrough, italic, etc.
 
-| 名字 | 描述 |
+| Name | Content |
 | ------------- | ----------- |
 | Help      | ~~Display the~~ help window.|
 | Close     | _Closes_ a window     |
 
-#### 表格中嵌入图片（链接）
-其实前面介绍图片显示、图片链接的时候为了清晰就是放在在表格中显示的。
+#### Embed an image (link) in the table
 
-| 图片 | 描述 |
+| Img | Text |
 | ---- | ---- |
-|![baidu][baidu-logo] | 百度|
+|![baidu][baidu-logo] | Baidu |
 
-表情
+Emoji
 ----------
-Github的Markdown语法支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。
+GFM syntax supports adding emojis, and entering different symbol codes (characters surrounded by two colons) can display different emoticons.
 
-比如`:blush:`，可以显示:blush:。
+e.g.`:blush:`，look like:blush:。
 
-具体每一个表情的符号码，可以查询GitHub的官方网页[http://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
+You may check the codes for different emojis using this link: [http://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
 
-但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
+But this page is loaded **very slowly** every time. So I sorted it into this repo, you can view it directly here.[emoji](./emoji.md)。
 
-diff语法
+diff syntax
 ---------
 版本控制的系统中都少不了diff的功能，即展示一个文件内容的增加与删除。
 GFM中可以显示的展示diff效果。使用绿色表示新增，红色表示删除。
-#### 语法
-其语法与代码高亮类似，只是在三个反引号后面写diff，
-并且其内容中，以 `+ `开头表示新增，`- `开头表示删除。
+In the version control system, the function of diff is indispensable, i.e., the addition and deletion of a file content is displayed.
+The diff effect that can be displayed in GFM. Green is for new, while red is for deleted.
+#### Syntax
+The syntax is similar to code [fenced code blocks](#fenced-code-blocks), except that the diff is written after the three backticks.
+And in the content, the beginning of `+ ` indicates the addition, and the beginning of `- ` indicates the deletion.
 
-#### 效果
+#### Look like
 
 ```diff
-+ 鸟宿池边树，僧敲月下门
-- 鸟宿池边树，僧推月下门
++ Hello world!
+- This is useless.
 ```
 
 
 
 --------------------------------
-[csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
-[zhihu]:https://www.zhihu.com/people/jellywong "我的知乎，欢迎关注"
+[csdn]:http://www.csdn.net/ "This is CSDN"
+[zhihu]:https://www.zhihu.com/ "This is Zhihu"
+[GitHubLink]:https://github.com/y2l "This is my GitHub"
 [weibo]:http://weibo.com/linpiaochen
-[baidu-logo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
-[weibo-logo]:/img/weibo.png "点击图片进入我的微博"
-[csdn-logo]:/img/csdn.png "我的CSDN博客"
+[baidu-logo]:http://www.baidu.com/img/bdlogo.gif "Baidu logo"
+[weibo-logo]:/img/weibo.png "Weibo!"
+[csdn-logo]:/img/csdn.png "CSDN!"
 [foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
