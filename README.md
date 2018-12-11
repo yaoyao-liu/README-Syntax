@@ -137,7 +137,7 @@ https://github.com/username/reponame/raw/master/folder/imagename.gif
 |1|`![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google logo")`|![Google](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png "Google logo")
 |2|`![][foryou]`|![][foryou]
 
-Note that the syntax of Example 2 uses the form of the **URL identifier**, which has been described in the [Link](#link) section.
+Note that the syntax of Example 2 uses the form of the **link labels**, which has been described in the [Link](#link) section.
 >foryou is defined at the end of the page like this:
 ```
 [foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
