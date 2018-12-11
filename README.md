@@ -14,7 +14,7 @@ This file is used to demonstrate the markdown syntax for writing README files. T
 ## Index
 * [Lines](#Lines)
 * [Headers](#Headers)
-* [Textual content](#Textual content)
+* [Texts](#Texts)
     * Normal text
     * Single-line text
     * Multi-line text
@@ -31,16 +31,16 @@ This file is used to demonstrate the markdown syntax for writing README files. T
         *  Links to  external URL
         *  Links the URL in this repository
     * Anchor
-    * [Image Links](#Image Links)
+    * [Image-links](#Image-links)
 * [Lists](#Lists)
     * Unordered lists
     * Ordered lists
     * Check box lists
-* [Block reference](#Block reference)
-* [Code highlighting](#Code highlighting)
+* [Block-reference](#Block-reference)
+* [Code-highlighting](#Code-highlighting)
 * [Tables](#Tables) 
 * [Emoji](#Emoji)
-* [diff syntax](#diff syntax)
+* [diff-syntax](#diff-syntax)
 
 ### Lines
 -----------
