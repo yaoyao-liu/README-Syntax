@@ -74,9 +74,9 @@ Add 1 tab or 4 spaces at the beginning of the line.
 #### Syntax 1
 Add 1 tab or 4 spaces at the beginning of several lines of text.
 
-    欢迎到访
-    很高兴见到您
-    祝您，早上好，中午好，下午好，晚安
+    Sons of Gondor,
+    of Rohan,
+    my brothers!
 
 #### 语法2
 使用一对各三个的反引号：
