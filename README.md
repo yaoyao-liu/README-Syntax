@@ -171,7 +171,7 @@ It's ok to mix the two syntaxes directly, but it's awkward, so we can use the fo
 
 |#|Syntax|Look like|
 |---|----|:---:|
-|1|`[![weibo-logo]](http://weibo.com/n)`|[![weibo-logo]](http://weibo.com/)|
+|1|`[![weibo-logo]](http://weibo.com/)`|[![weibo-logo]](http://weibo.com/)|
 |2|`[![](/img/zhihu.png "This is the Zhihu link")][zhihu]`|[![](/img/zhihu.png "This is the Zhihu link")][zhihu]|
 |3|`[![csdn-logo]][csdn]`|[![csdn-logo]][csdn]|
 
