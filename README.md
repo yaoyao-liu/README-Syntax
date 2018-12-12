@@ -76,14 +76,14 @@ Add 1 tab or 4 spaces at the beginning of several lines of text.
     of Rohan,
     my brothers!
 
-#### Syntax 1
+#### Syntax 2
 Use three backticks:
 ```
 Sons of Gondor,
 of Rohan,
 my brothers!
 ```
-This syntax can also be used for code highlighting，See [Code-highlighting](#Code-highlighting)
+This syntax can also be used for code highlighting，See [Fenced code blocks](#fenced-code-blocks).
 ### Text highlighting
 Using a pair of backquotes.
 Syntax：
